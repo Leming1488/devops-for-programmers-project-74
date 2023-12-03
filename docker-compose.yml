@@ -3,6 +3,6 @@ services:
   app:
     build:
       context: .
+      dockerfile: Dockerfile.production
     command: npm test
-    volumes:
-      - ./app:/app
+    image: mistercool88/devops-for-programmers-project-74
