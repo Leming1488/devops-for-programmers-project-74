@@ -31,4 +31,4 @@ jobs:
           context: .
           file: Dockerfile.production
           push: true
-          tags: ${{ env.APP_IMAGE_NAME }}:latest
+          tags: mistercool88/devops-for-programmers-project-74:latest
