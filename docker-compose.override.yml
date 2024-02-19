@@ -4,7 +4,7 @@ services:
     extends:
       file: docker-compose.yml
       service: app
-    command: npm run dev
+    command: bash -c 'sleep 3 && npm start'
     volumes:
       - ./app:/app
     ports:

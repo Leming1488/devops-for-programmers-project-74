@@ -6,3 +6,13 @@ services:
       dockerfile: Dockerfile.production
     command: npm test
     image: mistercool88/devops-for-programmers-project-74
+    depends_on:
+      - db
+    env_file:
+      - ./app/.env
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
