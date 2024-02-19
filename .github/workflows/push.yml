@@ -23,7 +23,7 @@ jobs:
 
       - name: Prepare .env file
         run: |
-          cp .env.example .env
+          cp app/.env.example .env
       - name: Test
         run: |
           make docker_run_tests
